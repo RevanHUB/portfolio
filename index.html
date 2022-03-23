@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="src/App.css" as="style"> 
+    <script defer src="src/assets/fontawe.js"></script>
+    <script defer src="src/assets/jquery-3.6.0.min.js"></script>
+    <script src="src/assets/tailwind.js"></script>
+    <link rel="stylesheet" href="src/App.css" >
+    <title>David Martín Portfolio</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="App">
+        <header class="flex items-center">
+          <div class="title justify-center">
+            <h2>DM</h2>
+          </div>
+          <div class="desktop-menu flex justify-around">
+            <a class="specialButton" id="projectsShow"  > Portfolio</a>
+            <a id="navShadow#1" > About Me</a>
+            <a id="navShadow#2" > Skills </a>
+            <a id="navShadow#3" > Contact </a>
+          </div>
+          
+          <div class="mobile-menu flex ">
+            <div class="barsResponsive">
+              <div id="barsButton" class="menu-btn"></div>
+            </div>
+            <div id="dropdown" class="dropingDiv">
+              <a class="specialButton" id="projectsShowR"  > Portfolio</a>
+              <a id="navShadow#1R" > About Me</a>
+              <a id="navShadow#2R" > Skills </a>
+              <a id="navShadow#3R" > Contact </a>
+            </div>
+          </div>
+        </header>
+      
+        <div id="modal" class="flex flex-col hidden modal">
+        <div class="flex flex-col modal-container">
+          <h2 id="modalText"></h2>
+          <button id="closeModal">Back</button>
+        </div>
+        </div>
+        <div id="present" class="presentation-theme flex justify-end items-center">
+          <div class="mt-30 myTitleWrapper flex flex-col justify-start">
+            <h3>── HELLO THERE,</h3>
+            <h2>I am David Martín </h2> 
+            <h4>I am Frontend Developer</h4>     
+            <a id="cvLinks">Download CV <i class="fa fa-download"></i></a>
+          </div>
+  
+          <div class="flex justify-end align-center myImageWrapper">
+            <img  src="./src/assets/FeedMedia/sport-bg.jpg" alt="portrait-img" />
+
+          </div>
+          <div class="scrollMouse">
+            <div class="dotMouse"></div>
+          </div>
+        </div>
+        <div id="aboutMe" class="flex flex-col justify-center items-center presentation-theme">
+          <div class="flex justify-center items-center portraitContainer">
+            <div class="imagePortraitWrapper">
+              <div class="imagePortrait">
+                <img loading="lazy" src="./src/assets/FeedMedia/frame-nobg.png" alt="portrait-img" />
+              </div>
+          </div>
+  
+            <div class="textPortrait">
+              <p>My name is <b>David Martín Concepción</b>. I'm a Web developer who loves coding! 💗 </p>
+              <p>I'm from <b>Spain</b>,  allowed to work in EU too! ✅   </p>
+              <p>Studied C.F.G.S Administration of Informatic Systems! 📚 </p>
+              <p>I would like to work on remote or in-site 💭 </p>
+            </div>
+  
+          </div>
+         
+        </div>
+        <div id="skills" class="flex flex-col justify-center items-center presentation-theme">
+          <h1 data-ident="h1">SKILLS</h1>
+          <div class="flex flex-row flex-wrap justify-center align-center skillContainer">
+          <div id="skillCSS" class="skill">
+            <h2>CSS</h2>
+            <p>60%</p>
+            <div class="skillBar">
+               <div id="barProgressCSS" class="skillProgress" data-bar="css"></div>
+            </div>
+          </div>
+          <div id="skillTW" class="skill">
+            <h2>TailwindCSS</h2>
+            <p>50%</p>
+            <div class="skillBar">
+               <div id="barProgressTW" class="skillProgress" data-bar="tailwindcss"></div>
+            </div>
+          </div>
+          <div id="skillJS" class="skill">
+            <h2>JavaScript</h2>
+            <p>50%</p>
+            <div class="skillBar">
+               <div id="barProgressJS" class="skillProgress" data-bar="js"></div>
+            </div>
+          </div>
+  
+          <div id="skillNJS" class="skill">
+            <h2>NodeJS</h2>
+            <p>40%</p>
+            <div class="skillBar">
+               <div id="barProgressNJS" class="skillProgress" data-bar="nodejs"></div>
+            </div>
+          </div>
+          <div id="skillRT" class="skill">
+            <h2>React</h2>
+            <p>30%</p>
+            <div class="skillBar">
+               <div id="barProgressRea" class="skillProgress" data-bar="react"></div>
+            </div>
+          </div>
+          <div id="skillRS"class="skill">
+            <h2>Responsive</h2>
+            <p>50%</p>
+            <div class="skillBar">
+               <div id="barProgressRes" class="skillProgress" data-bar="responsive"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+          
+        <footer id="contact" class="flex flex-col justify-center align-center">
+        <h3 class="contactMe"> | Contact Me </h3> 
+          <div class="socialLinks">
+            <a href="mailto:davidasir2020@gmail.com"><i class="fa fa-at"></i></a>
+            <a href="https://www.linkedin.com/in/david-martín-523a3b21b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <button id="backToTop"><i id="fa-top" class="fa fa-arrow-up"></i></button>
+          <button id="modeButton"><i id="fa-moon" class="fa fa-moon"></i><i id="fa-sun" class="fa fa-sun"></i></button>
+        </footer>
+        <script defer src="src/assets/js.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
